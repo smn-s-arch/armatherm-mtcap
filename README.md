@@ -21,7 +21,9 @@ This script installs or updates the [ChirpStack MQTT Forwarder](https://www.chir
 
 ## Usage
 
-1. **Download the Script:** Save the script to your local machine (e.g., `chirpstack_mqtt_forwarder.sh`).
+1. **Download the Script:** Save the script to your local machine (e.g., `chirpstack_mqtt_forwarder.sh`). Or clone this repository
+    ```bash
+    git clone https://github.com/smn-s-arch/armatherm-mtcap.git
 2. **Make the Script Executable:**  
    ```bash
    chmod +x chirpstack_mqtt_forwarder.sh
