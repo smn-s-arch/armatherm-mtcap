@@ -27,3 +27,7 @@ This script installs or updates the [ChirpStack MQTT Forwarder](https://www.chir
 2. **Make the Script Executable:**  
    ```bash
    chmod +x chirpstack_mqtt_forwarder.sh
+
+## License
+
+This script is provided as-is, with no warranty. Use it at your own risk. Contributions and improvements are welcome.
