@@ -28,6 +28,35 @@ This script installs or updates the [ChirpStack MQTT Forwarder](https://www.chir
    ```bash
    chmod +x chirpstack_mqtt_forwarder.sh
 
-## License
+  
+ # ChirpStack MQTT Forwarder Installer für Multitech MTCAP AP3 Gateways
 
-This script is provided as-is, with no warranty. Use it at your own risk. Contributions and improvements are welcome.
+Dieses Skript installiert oder aktualisiert den [ChirpStack MQTT Forwarder](https://www.chirpstack.io/) auf Multitech MTCAP AP3 Gateways. Es ist speziell für diese Gateways ausgelegt und nutzt SSH, um Befehle aus der Ferne auf dem Gateway auszuführen.
+
+## Funktionen
+
+- **Komplettinstallation:** Lädt das passende MQTT Forwarder-Paket für Multitech MTCAP AP3 Gateways herunter und installiert es.
+- **Konfigurationsaktualisierung:** Aktualisiert die MQTT-Server-Einstellungen in der Konfigurationsdatei des Forwarders.
+- **Dienstverwaltung:** Startet den MQTT Forwarder nach Konfigurationsänderungen über `monit` neu.
+- **Interaktive Einrichtung:** Fordert zur Eingabe notwendiger Zugangsdaten und Einstellungen auf, um eine korrekte Installation und Konfiguration sicherzustellen.
+- **Fehlerbehandlung:** Überprüft Voraussetzungen wie `sshpass` und gibt Hinweise zur Installation, falls diese fehlen.
+
+## Voraussetzungen
+
+- **Multitech MTCAP AP3 Gateway:** Dieses Skript ist ausschließlich für diese Gateways vorgesehen.
+- **SSH-Zugang:** Das Gateway muss per SSH erreichbar sein.
+- **sshpass:** Das Skript verwendet `sshpass` für eine nicht-interaktive SSH-Authentifizierung.
+  - Unter **Debian/Ubuntu**: Installation mit `sudo apt install sshpass`
+  - Unter **macOS**: Installation mit Homebrew über `brew install sshpass`
+- **Internetverbindung:** Erforderlich zum Herunterladen des MQTT Forwarder-Pakets.
+
+## Verwendung
+
+1. **Skript herunterladen:** Lade das Skript auf deinen lokalen Rechner herunter (z. B. `chirpstack_mqtt_forwarder.sh`) oder klone dieses Repository:
+    ```bash
+    git clone https://github.com/smn-s-arch/armatherm-mtcap.git
+    ```
+2. **Skript ausführbar machen:**  
+    ```bash
+    chmod +x chirpstack_mqtt_forwarder.sh
+    ```
