@@ -19,8 +19,8 @@ read -p "Gateway IP Address: " GatewayIP
 read -p "Gateway USER: " GatewayUSER
 read -s -p "User Password: " GatewayUSERPASS
 echo ""
-read -p "MQTT Server IP: " mgttSERVERIP
-read -p "MQTT Server Port: " mqttSERVERPORT
+read -p "MQTT Server IP (chirpstack server): " mgttSERVERIP
+read -p "MQTT Server Port (Default 1883): " mqttSERVERPORT
 
 echo ""
 echo "Do you want to perform a full installation or update configuration only?"
